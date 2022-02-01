@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import "./App.css";
+import Form from "./components/Form";
+import Game from "./components/Game";
+import { getStudentsData, saveStudentsData } from "./utils/api";
 
 function App() {
+  useEffect(() => {
+    // saveStudentsData()
+    //   .then((data) => {
+    //     console.log("data", data);
+    //   })
+    //   .catch((err) => {
+    //     console.log("err", err);
+    //   });
+    // getStudentsData()
+    //   .then((data) => {
+    //     console.log("data", data);
+    //   })
+    //   .catch((err) => {
+    //     console.log("err", err);
+    //   });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Game />
+      {/* <Form /> */}
     </div>
   );
 }
