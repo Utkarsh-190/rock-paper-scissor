@@ -1,5 +1,5 @@
 .game {
-  /* border: 2px solid red; */
+  border: 2px solid red;
 
   display: flex;
   flex-direction: column;
@@ -12,16 +12,16 @@
 }
 
 .title {
-  font-size: 3rem;
-}
-
-.score {
   font-size: 2rem;
 }
 
+.score {
+  font-size: 1rem;
+}
+
 .choosing {
-  width: 60%;
-  margin-top: 70px;
+  width: 80%;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -32,13 +32,16 @@
   height: 100px;
   width: 100px;
   border-radius: 10px;
-  cursor: pointer;
   transition: 0.1s ease-in-out;
 }
 
-.choosing > *:hover {
+/* .choosed > *:hover {
   background: #4b2cff;
 }
+
+.choosing > *:hover {
+  background: #002cff;
+} */
 
 .choice {
   font-size: 1.25rem;
