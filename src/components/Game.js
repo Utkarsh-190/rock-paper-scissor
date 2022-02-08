@@ -76,7 +76,7 @@ function Game() {
       <div className={classes.score}>Score: {score}</div>
       <Button
         variant="contained"
-        style={{ background: "#3b27ae" }}
+//         style={{ background: "#3b27ae" }}
         onClick={() => {
           setScore(0);
         }}
@@ -135,7 +135,7 @@ function Game() {
 
           <Button
             variant="contained"
-            style={{ background: "#3b27ae" }}
+//             style={{ background: "#3b27ae" }}
             onClick={() => {
               setChoosing(true);
             }}
